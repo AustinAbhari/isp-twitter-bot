@@ -26,11 +26,11 @@ const main = (data) => {
   }
 
   T.post('statuses/update', params, function(err, data, response) {
-  if(!err){
-    console.log(data)
-  } else {
-    console.log(err);
-  }
-  })
+    if(!err){
+      console.log(data)
+    } else {
+      console.error(err);
+    }
+  });
 }
 speedTester();
