@@ -1,0 +1,25 @@
+{
+  "name": "isp-twitter-bot",
+  "version": "1.0.0",
+  "description": "Twitter bot to tweet at my isp when they drop below min mbps",
+  "main": "app.js",
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "speedtest-net": "^1.4.3",
+    "twitter": "^1.7.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AustinAbhari/isp-twitter-bot.git"
+  },
+  "author": "Austin Abhari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AustinAbhari/isp-twitter-bot/issues"
+  },
+  "homepage": "https://github.com/AustinAbhari/isp-twitter-bot#readme"
+}
