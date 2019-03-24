@@ -2,14 +2,19 @@ require('dotenv').config();
 const twitter = require('twitter');
 var speedTest = require('speedtest-net');
 
+
+
+const setInterval = () => {
+  speedTester();
+  setInterval(() => { speedTester() },3600000);
+}
+
 const speedTester = () => {
-  setInterval(() => {
   var test = speedTest({maxTime: 5000});
 
   test.on('data', data => {
     if (data.speeds.download < 20) main(data);
   });
-  },3600000);
 }
 
 const main = (data) => {
